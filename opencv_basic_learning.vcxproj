@@ -87,9 +87,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>D:\code\opencv\modules\dnn\include;D:\code\opencv\modules\highgui\include;D:\code\opencv\modules\imgproc\include;D:\code\opencv\modules\videoio\include;D:\code\opencv\modules\core\include;D:\code\opencv\modules\imgcodecs\include;D:\code\opencv\include;D:\code\opencv\build1;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
+      <AdditionalLibraryDirectories>D:\code\opencv_basic_learning\3rdparty\opencv\lib;D:\code\opencv_basic_learning\3rdparty\onnxruntime-win-x64-gpu-1.2.0\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -123,6 +125,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="basic_uses.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="exec.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
